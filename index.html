@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/98.css"
+>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ccc; /* Changed background color to gray */
+        }
+
+        .window {
+            background-color: transparent !important;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .post {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .post-date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .post-content {
+            line-height: 1.6;
+        }
+
+        /* Added styles for the button */
+        .button-wrapper {
+            text-align: center;
+        }
+
+        .button {
+            padding: 5px 10px;
+            background-color: #f0f0f0; /* Light gray background color */
+            color: black; /* Changed text color to black */
+            border: 1px solid #ccc; /* Added border */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #e0e0e0; /* Darker gray hover background color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">CodeREX's Blog</div>
+        </div>
+        <div class="window-body" style="padding: 20px;">
+            <div class="header">
+                <h1>CodeREX</h1>
+                <p>You can waste your time here!</p>
+            </div>
+
+            <div class="post">
+                <div class="post-title">우리 사회의 무의식적 차별 없애기</div>
+                <div class="post-date">2024/5/16</div>
+                <div class="post-content">
+                    <p>우리 사회의 무의식적 차별, 필터버블이 일어나는 이유</p>
+                    <p>우리의 해답</p>
+                    
+                    <!-- Added button wrapper and onclick attribute to redirect to a specific website -->
+                    <div class="button-wrapper">
+                        <button class="button" onclick="window.location.href = 'https://hyckyee.github.io/OpenMind/';">View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-title">멸종위기 동물 소개하기</div>
+                <div class="post-date">2024/4/9</div>
+                <div class="post-content">
+                    <p>판다와 벵갈호랑이</p>
+                    <p>판다와 벵갈호랑이 등 여러 멸종위기 동물들을 소개하는 웹페이지</p>
+                    <div class="button-wrapper">
+                        <button class="button" onclick="window.location.href = 'https://hyckyee.github.io/endangeredanimals/';">View Project</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="post">
+                <div class="post-title">학교생활의 불편함 없애기</div>
+                <div class="post-date">2024/2/22</div>
+                <div class="post-content">
+                    <p>병점스토리,어떻게 시작했는가 </p>
+                    <p>어느 날이었다. 학교에서 야자를 마치고 나오는 중이었다. 그러면서 무의식적으로 시간표를 확인하고, 급식을 확인하고, 친구들과 소통하기 위해 순식간에 3개의 앱을 사용했다. 그 사실을 깨달은 나는, 우리 병점고등학교에서만큼은 이러한 일이 없게끔 할 수 있다면, 하나의 웹사이트로 통합할 수 있다면 좋을 것이라고 생각하게 되었다.
+                        병점스토리는?
+                        병점스토리는 그 계기로부터 알 수 있다시피, 병점고만을 위한 통합 웹을 지향하는 사이트이다. 현재 병점스토리에는 급식 확인, 시간표 확인, 커뮤니티, 파일 공유의 4가지 기능이 존재한다. 이 기능들을 통해 기존에는 여러 개의 앱을 사용하거나 불편한 단톡방 공지를 확인해야 하는 등의 불편함을 없앨 수 있었다.
+                        병점스토리의 개발과정
+                        병점스토리는 기본적으로 학교 생활에 필요한 모든 정보를 제공하자는 취지를 바탕으로 시작하였다. 그렇기에 가장 중요한 스펙(MVP 스펙)을 급식 확인과 시간표 확인으로 잡았다. 그렇게 NEIS API를 통해 그 정보들을 정확하게 불러올 수 있었다. 또한, Bootstrap을 사용해서 CSS 대신 훨씬 간편하게 UI 디자인을 하였다. 그러나 커뮤니티와 파일 공유 서비스에서 난관이 있었다. 바로 Firebase API가 제대로 작동하지 않아서 신고 기능과 신고를 처리할 수 있는 어드민의 기능이 무용지물이 된 것이었다. 그 오류의 원인은 바로 API key의 오류였다. API key를 수정하고 나니 완벽하게 작동해서 안도감이 들면서도 한편으로는 아쉽기도 했다.
+                        병점스토리의 미래는?
+                        병점스토리는 유저들의 피드백을 적극 수용하며, 기능을 추가해나갈 계획이다. 현재 단 4개뿐인 기능을 많이 늘릴 것이고, 앞으로도 학교생활에 필요한 모든 정보를, 우리의 슬로건인 "병점고의 모든것, 한 자리에."를 이루는 것이 목표이다.</p>
+                    
+                    <!-- Added button wrapper and onclick attribute to redirect to a specific website -->
+                    <div class="button-wrapper">
+                        <button class="button" onclick="window.location.href = 'https://hyckyee.github.io/';">View Project</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
